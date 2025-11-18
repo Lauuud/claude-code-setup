@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "skills": {
+    "skill-developer": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "description": "Meta-skill for creating and managing Claude Code skills",
+      "promptTriggers": {
+        "keywords": [
+          "create skill",
+          "add skill",
+          "new skill",
+          "skill system",
+          "skill-rules.json",
+          "skill activation",
+          "manage skills"
+        ],
+        "intentPatterns": [
+          "how.*skill.*work",
+          "add.*auto.*activation",
+          "trigger.*skill"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          ".claude/skills/**/*.md",
+          ".claude/skills/skill-rules.json"
+        ]
+      }
+    }
+  }
+}

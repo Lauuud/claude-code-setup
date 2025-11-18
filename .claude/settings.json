@@ -1,0 +1,83 @@
+{
+  "hooks": {
+    "UserPromptSubmit": {
+      "command": "bash .claude/hooks/skill-reminder.sh"
+    }
+  },
+  "permissions": {
+    "allow": [
+      "Read:*",
+      "Grep:*",
+      "Glob:*",
+      "Bash(git:*)",
+      "Bash(npm:*)",
+      "WebSearch",
+      "Read:*",
+      "Write:*",
+      "Edit:*",
+      "Grep:*",
+      "Glob:*",
+      "Bash(rm ./*)",
+      "Bash(rm -r ./*)",
+      "Bash(rm -rf ./*)",
+      "Bash(rmdir ./*)",
+      "Bash(mv ./* *)",
+      "Bash(cp ./* *)",
+      "Bash(cp -r ./* *)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(ls:*)",
+      "Bash(find . :*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(echo:*)",
+      "Bash(pwd)",
+      "Bash(tree:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git stash:*)",
+      "Bash(git push)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(npm install)",
+      "Bash(npm ci)",
+      "Bash(npm run:*)",
+      "Bash(npm list:*)",
+      "Bash(pip install -r:*)",
+      "Bash(pip list:*)",
+      "Bash(uv sync:*)",
+      "Bash(docker compose:*)",
+      "Bash(pytest:*)",
+      "Bash(mypy:*)",
+      "Bash(ruff:*)",
+      "Bash(python:*)",
+      "Bash(node:*)",
+      "Bash(make:*)",
+      "Bash(cargo:*)",
+      "Bash(go:*)",
+      "Task:*"
+    ],
+    "ask": [
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(docker:*)",
+      "Bash(systemctl:*)",
+      "Bash(sudo:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~)",
+      "Bash(dd:*)",
+      "Bash(mkfs:*)",
+      "Bash(:(){ :|:& };:)"
+    ]
+  }
+}

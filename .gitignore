@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dev sessions (your work artifacts)
+dev/sessions/
+
+# Environment
+.env
+.env.local
+*.log
+
+# Dependencies (if any in future)
+node_modules/
+venv/
+__pycache__/
